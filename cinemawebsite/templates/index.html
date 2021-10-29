@@ -35,7 +35,6 @@
       </div> <!-- .slider-wrapper -->
     </div> <!-- .page-banner -->
   </header>
-
   <main>
     <div class="page-section">
       <div class="container">
@@ -50,7 +49,7 @@
           </div>
           <div class="col-lg-6 py-3">
             <div class="about-img">
-              <img src="{% static 'img/about.jpg" alt' %}="">
+              <img src="{% static 'img/about.jpg'  %}" alt="">
             </div>
           </div>
         </div>
@@ -208,7 +207,7 @@
             <h2 class="title-section">Our Latest Projects</h2>
           </div>
           <div class="col-md-6 py-3 text-md-right">
-            <a href=" portfolio.html" class="btn btn-outline-primary">Browse Projects <span class="mai-arrow-forward ml-2"></span></a>
+            <a href="{% url 'portfolio' %}" class="btn btn-outline-primary">Browse Projects <span class="mai-arrow-forward ml-2"></span></a>
           </div>
         </div>
 

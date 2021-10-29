@@ -7,8 +7,8 @@
       <div class="container">
         <nav aria-label="Breadcrumb">
           <ol class="breadcrumb bg-transparent mb-4">
-            <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-            <li class="breadcrumb-item"><a href="blog.html">Blog</a></li>
+            <li class="breadcrumb-item"><a href="{% url 'homepage' %}">Home</a></li>
+            <li class="breadcrumb-item"><a href="{% url 'blog' %}">Blog</a></li>
             <li class="breadcrumb-item active" aria-current="page">How to growth your Business with scalable Employee</li>
           </ol>
         </nav>
@@ -16,7 +16,7 @@
           <div class="col-lg-8">
             <div class="blog-single-wrap">
               <div class="post-thumbnail">
-                <img src="../assets/img/bg_image_1.jpg" alt="">
+                <img src="{% static img/bg_image_1.jpg %}" alt="">
               </div>
               <h1 class="post-title">How to growth your Business with scalable Employee</h1>
               <div class="post-meta">
