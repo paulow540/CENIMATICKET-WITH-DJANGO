@@ -1,6 +1,5 @@
 {% extends 'base.html' %}
 {% load static %} 
-{% block content %} Home {% endblock %}
 {% block body %}
 
 
@@ -343,7 +342,7 @@
             </div>
             <div class="author">
               <div class="avatar">
-                <img src="{% static 'img/person/person_3.jpg+' %}" alt="">
+                <img src="{% static 'img/person/person_3.jpg' %}" alt="">
               </div>
               <div class="d-inline-block ml-2">
                 <div class="author-name">May Halloway</div>
@@ -384,7 +383,7 @@
             <div class="card-blog">
               <div class="header">
                 <div class="avatar">
-                  <img src="{% static 'img/person/person_' %}1.jpg" alt="">
+                  <img src="{% static 'img/person/person_1.jpg' %}" alt="">
                 </div>
                 <div class="entry-footer">
                   <div class="post-author">Sam Newman</div>
@@ -404,7 +403,7 @@
             <div class="card-blog">
               <div class="header">
                 <div class="avatar">
-                  <img src="{% static 'img/person/person_' %}2.jpg" alt="">
+                  <img src="{% static 'img/person/person_2.jpg' %}" alt="">
                 </div>
                 <div class="entry-footer">
                   <div class="post-author">Sam Newman</div>
@@ -424,7 +423,7 @@
             <div class="card-blog">
               <div class="header">
                 <div class="avatar">
-                  <img src="{% static 'img/person/person_3.jpg+' %}" alt="">
+                  <img src="{% static 'img/person/person_3.jpg' %}" alt="">
                 </div>
                 <div class="entry-footer">
                   <div class="post-author">Sam Newman</div>
@@ -436,7 +435,7 @@
                 <div class="post-excerpt">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</div>
               </div>
               <div class="footer">
-                <a href="blog-single.html ">Read More <span class="mai-chevron-forward text-sm"></span></a>
+                <a href="{% url 'blog-single' %}">Read More <span class="mai-chevron-forward text-sm"></span></a>
               </div>
             </div>
           </div>
